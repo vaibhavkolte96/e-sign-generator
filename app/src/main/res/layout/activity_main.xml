@@ -25,30 +25,30 @@
 
     </android.gesture.GestureOverlayView>
 
-    <RelativeLayout
-        android:id="@+id/rellay_esign_donebutton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="10dp">
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:text="@string/done" />
 
-            <Button
-                android:id="@+id/DoneButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Done" />
-
-            <Button
-                android:id="@+id/ClearButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Clear" />
-        </LinearLayout>
-    </RelativeLayout>
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:text="@string/clear" />
+    </LinearLayout>
 
 </LinearLayout>
